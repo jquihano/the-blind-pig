@@ -99,7 +99,6 @@ select {
 }
 
 .container {
-    
     width: 1440px;
     margin: 0 auto;
     background: var(--white);
@@ -107,7 +106,7 @@ select {
   }
 
 
-nav.navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,6 +314,11 @@ main {
 /* MEDIA QUERIES */
 
 @media (max-width: 800px){
+
+    .container {
+        width: 100%;
+    }
+    
     .toggle-button {
         display: flex;
         overflow: visible;
