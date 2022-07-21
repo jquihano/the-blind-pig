@@ -99,20 +99,22 @@ select {
 }
 
 .container {
-    position: relative;
-    max-width: 1440px;
-    margin: auto;
+    
+    width: 1440px;
+    margin: 0 auto;
     background: var(--white);
     overflow: hidden;
   }
 
-.navbar {
+
+nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.99);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+    box-shadow: 0 0 10px hsl(0deg 0% 0% / 5%);
     color: white;
-    padding: 1em;
     width: 100%;
     position: fixed;
 }
@@ -144,6 +146,7 @@ select {
     text-decoration: none;
     color: var(--space-cadet);
     padding: 1rem;
+    margin-right: 2rem;
     display: block;
 }
 
@@ -325,8 +328,6 @@ main {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
-        box-shadow: 0 0 10px hsl(0deg 0% 0% / 5%);
         padding: 1rem 4rem;
     }
 
