@@ -163,50 +163,7 @@ select {
 
 }
 
-@media (max-width: 900px){
-    .toggle-button {
-        display: flex;
-        overflow: visible;
-    }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
-        box-shadow: 0 0 10px hsl(0deg 0% 0% / 5%);
-        padding: 1rem 4rem;
-    }
-
-    
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li {
-        text-align: center;
-    }
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-        overflow: hidden;
-
-    }
-
-    .about-content {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 main {
     background: var(--white);
@@ -279,6 +236,7 @@ main {
 }
 .about {
     width: 90%;
+    height: 30%;
     margin: 10em auto;
 }
 
@@ -291,8 +249,9 @@ main {
 
 .about-img {
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
 }
+
 .about-text {
     font-size: 1.6rem;
     color: var(--rhythm);
@@ -314,3 +273,54 @@ main {
     padding: .5rem;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+    .toggle-button {
+        display: flex;
+        overflow: visible;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+        box-shadow: 0 0 10px hsl(0deg 0% 0% / 5%);
+        padding: 1rem 4rem;
+    }
+
+    
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        overflow: hidden;
+
+    }
+
+    .about-content {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
