@@ -230,10 +230,13 @@ main {
 .button i {
     font-size: 3rem;
 }
+
 .section-title {
     color: var(--space-cadet);
     font-size: 2.5rem;
+    margin-top: 2rem;
 }
+
 .about {
     width: 90%;
     height: 30%;
@@ -255,9 +258,13 @@ main {
 .about-text {
     font-size: 1.6rem;
     color: var(--rhythm);
-    margin: 2em auto;
-    padding: 1rem;
+    margin: 1em auto;
+    padding: 1rem 0;
     
+}
+
+.about-right img {
+    width: 40%;
 }
 
 .services {
@@ -270,6 +277,17 @@ main {
     font-family: Monoton, cursive;
     font-size: 4.2rem;
     color: var(--saffron);
+    padding: .5rem;
+}
+
+.card-heading {
+    font-size: 2rem;
+    color: var(--space-cadet);
+}
+
+.card-text {
+    font-size: 1.6rem;
+    color: var(--rhythm);
     padding: .5rem;
 }
 
