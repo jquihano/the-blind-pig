@@ -260,7 +260,6 @@ main {
     color: var(--rhythm);
     margin: 1em auto;
     padding: 1rem 0;
-    
 }
 
 .about-right img {
@@ -271,6 +270,12 @@ main {
     margin: 0 auto;
     width: 90%;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 33%;
 }
 
 .card-number {
@@ -289,8 +294,13 @@ main {
     font-size: 1.6rem;
     color: var(--rhythm);
     padding: .5rem;
+    width: 70%;
 }
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
 /* MEDIA QUERIES */
 
 @media (max-width: 800px){
@@ -339,6 +349,15 @@ main {
 
     .about-img {
         margin: 0 auto;
+        width: 100%;
+    }
+
+    .services {
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .card-text , .service-card{
         width: 100%;
     }
 }
