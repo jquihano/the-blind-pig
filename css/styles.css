@@ -363,7 +363,7 @@ main {
 
     .about-img {
         margin: 0 auto;
-        width: 100%;
+        max-width: 500px;
     }
 
     .services {
@@ -373,5 +373,17 @@ main {
 
     .card-text , .service-card{
         width: 100%;
+        padding: .5rem 0;
+    }
+    .card-number {
+        font-size: 3.2rem;
+    }
+    
+    .card-heading {
+        font-size: 1.7rem;
+    }
+    
+    .card-text {
+        font-size: 1.2rem;;
     }
 }
